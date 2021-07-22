@@ -1,0 +1,38 @@
+Quest: LVLUP20
+DisplayName: Level 20
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>                               LVLUP 1000
+
+RefuseQuest:  [1001]
+<ce>                               LVLUP 1001
+
+AcceptQuest:  [1002]
+<ce>                               LVLUP 1002
+
+QuestFail:  [1003]
+<ce>                               LVLUP 1003
+
+QuestComplete:  [1004]
+<ce>                               LVLUP 1004
+
+Message:  1010
+<ce>                        You have ascended to Level 20
+<ce>
+<ce>
+<ce>You'll never be better than you are today. If you are lucky,
+<ce>by superhuman effort, you can avoid slipping backwards for a
+<ce>while. But sooner or later, you're going to lose a step, or
+<ce>drop a beat, or miss a detail -- and you'll be gone forever.
+
+QBN:
+
+--   Quest start-up:
+
+_lvldetect_ task:
+    level 20 completed
+    say 1010
+    start quest LVLUP21
+    end quest

@@ -1,0 +1,37 @@
+Quest: LVLUP12
+DisplayName: Level 12
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>                               LVLUP 1000
+
+RefuseQuest:  [1001]
+<ce>                               LVLUP 1001
+
+AcceptQuest:  [1002]
+<ce>                               LVLUP 1002
+
+QuestFail:  [1003]
+<ce>                               LVLUP 1003
+
+QuestComplete:  [1004]
+<ce>                               LVLUP 1004
+
+Message:  1010
+<ce>          You have ascended to Level 12
+<ce>
+<ce>
+<ce>You can't believe how easy it is. You just have to go...
+<ce>a little crazy. And then, suddenly, it all makes sense,
+<ce>and everything you do turns to gold.
+
+QBN:
+
+--   Quest start-up:
+
+_lvldetect_ task:
+    level 12 completed
+    say 1010
+    start quest LVLUP13
+    end quest

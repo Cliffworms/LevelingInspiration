@@ -1,0 +1,37 @@
+Quest: LVLUP14
+DisplayName: Level 14
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>                               LVLUP 1000
+
+RefuseQuest:  [1001]
+<ce>                               LVLUP 1001
+
+AcceptQuest:  [1002]
+<ce>                               LVLUP 1002
+
+QuestFail:  [1003]
+<ce>                               LVLUP 1003
+
+QuestComplete:  [1004]
+<ce>                               LVLUP 1004
+
+Message:  1010
+<ce>                    You have ascended to Level 14
+<ce>
+<ce>
+<ce>Today you wake up, full of energy and ideas, and you know,
+<ce>somehow, that overnight everything has changed. What a
+<ce>difference a day makes.
+
+QBN:
+
+--   Quest start-up:
+
+_lvldetect_ task:
+    level 14 completed
+    say 1010
+    start quest LVLUP15
+    end quest

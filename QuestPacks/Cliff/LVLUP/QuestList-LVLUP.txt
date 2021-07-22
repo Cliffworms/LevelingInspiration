@@ -1,0 +1,25 @@
+-- Cliffworms Level-Up Messages
+
+schema: *name, group, membership, minReq, flag, notes
+
+LVLUP01, InitAtGameStart, M, 0, 0, Initialisation
+LVLUP02, NonMemberGuild, P, 0, 0, Level 2
+LVLUP03, NonMemberGuild, P, 0, 0, Level 3
+LVLUP04, NonMemberGuild, P, 0, 0, Level 4
+LVLUP05, NonMemberGuild, P, 0, 0, Level 5
+LVLUP06, NonMemberGuild, P, 0, 0, Level 6
+LVLUP07, NonMemberGuild, P, 0, 0, Level 7
+LVLUP08, NonMemberGuild, P, 0, 0, Level 8
+LVLUP09, NonMemberGuild, P, 0, 0, Level 9
+LVLUP10, NonMemberGuild, P, 0, 0, Level 10
+LVLUP11, NonMemberGuild, P, 0, 0, Level 11
+LVLUP12, NonMemberGuild, P, 0, 0, Level 12
+LVLUP13, NonMemberGuild, P, 0, 0, Level 13
+LVLUP14, NonMemberGuild, P, 0, 0, Level 14
+LVLUP15, NonMemberGuild, P, 0, 0, Level 15
+LVLUP16, NonMemberGuild, P, 0, 0, Level 16
+LVLUP17, NonMemberGuild, P, 0, 0, Level 17
+LVLUP18, NonMemberGuild, P, 0, 0, Level 18
+LVLUP19, NonMemberGuild, P, 0, 0, Level 19
+LVLUP20, NonMemberGuild, P, 0, 0, Level 20
+LVLUP21, NonMemberGuild, P, 0, 0, Level 21

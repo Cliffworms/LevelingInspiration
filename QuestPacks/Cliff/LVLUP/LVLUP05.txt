@@ -1,0 +1,38 @@
+Quest: LVLUP05
+DisplayName: Level 5
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>                               LVLUP 1000
+
+RefuseQuest:  [1001]
+<ce>                               LVLUP 1001
+
+AcceptQuest:  [1002]
+<ce>                               LVLUP 1002
+
+QuestFail:  [1003]
+<ce>                               LVLUP 1003
+
+QuestComplete:  [1004]
+<ce>                               LVLUP 1004
+
+Message:  1010
+<ce>                   You have ascended to Level 5
+<ce>
+<ce>
+<ce>Everything you do is just a bit easier, more
+<ce>instinctive, more satisfying. It is as though
+<ce>you had suddenly developed keen senses and
+<ce>instincts.
+
+QBN:
+
+--   Quest start-up:
+
+_lvldetect_ task:
+    level 5 completed
+    say 1010
+    start quest LVLUP06
+    end quest

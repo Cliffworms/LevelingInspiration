@@ -1,0 +1,37 @@
+Quest: LVLUP16
+DisplayName: Level 16
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>                               LVLUP 1000
+
+RefuseQuest:  [1001]
+<ce>                               LVLUP 1001
+
+AcceptQuest:  [1002]
+<ce>                               LVLUP 1002
+
+QuestFail:  [1003]
+<ce>                               LVLUP 1003
+
+QuestComplete:  [1004]
+<ce>                               LVLUP 1004
+
+Message:  1010
+<ce>      You have ascended to Level 16
+<ce>
+<ce>
+<ce>You've been trying too hard, thinking too much. Relax.
+<ce>Trust your instincts. Just be yourself. Do the little
+<ce>things, and the big things take care of themselves.
+
+QBN:
+
+--   Quest start-up:
+
+_lvldetect_ task:
+    level 16 completed
+    say 1010
+    start quest LVLUP17
+    end quest

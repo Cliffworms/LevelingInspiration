@@ -1,0 +1,38 @@
+Quest: LVLUP04
+DisplayName: Level 4
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>                               LVLUP 1000
+
+RefuseQuest:  [1001]
+<ce>                               LVLUP 1001
+
+AcceptQuest:  [1002]
+<ce>                               LVLUP 1002
+
+QuestFail:  [1003]
+<ce>                               LVLUP 1003
+
+QuestComplete:  [1004]
+<ce>                               LVLUP 1004
+
+Message:  1010
+<ce>                       You have ascended to Level 4
+<ce>
+<ce>
+<ce>It's all suddenly obvious to you. You just have to concentrate.
+<ce>All the energy and time you've wasted -- it's a sin. But
+<ce>without the experience you've gained, taking risks, taking
+<ce>responsibility for failure, how could you have understood?
+
+QBN:
+
+--   Quest start-up:
+
+_lvldetect_ task:
+    level 4 completed
+    say 1010
+    start quest LVLUP05
+    end quest

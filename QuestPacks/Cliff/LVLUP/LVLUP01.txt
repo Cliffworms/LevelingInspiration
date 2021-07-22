@@ -1,0 +1,30 @@
+Quest: LVLUP01
+DisplayName: LVLUP Initilisation
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>                               LVLUP 1000
+
+RefuseQuest:  [1001]
+<ce>                               LVLUP 1001
+
+AcceptQuest:  [1002]
+<ce>                               LVLUP 1002
+
+QuestFail:  [1003]
+<ce>                               LVLUP 1003
+
+QuestComplete:  [1004]
+<ce>                               LVLUP 1004
+
+QBN:
+
+Clock _timer_ 0:02
+
+--   Quest start-up:
+    start timer _timer_
+
+_timer_ task:
+    start quest LVLUP02
+    end quest

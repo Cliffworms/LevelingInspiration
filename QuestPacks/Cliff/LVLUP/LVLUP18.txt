@@ -1,0 +1,38 @@
+Quest: LVLUP18
+DisplayName: Level 18
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>                               LVLUP 1000
+
+RefuseQuest:  [1001]
+<ce>                               LVLUP 1001
+
+AcceptQuest:  [1002]
+<ce>                               LVLUP 1002
+
+QuestFail:  [1003]
+<ce>                               LVLUP 1003
+
+QuestComplete:  [1004]
+<ce>                               LVLUP 1004
+
+Message:  1010
+<ce>                        You have ascended to Level 18
+<ce>
+<ce>
+<ce>The challenge now is to stay at the peak as long as you can.
+<ce>You may be as strong today as any mortal who has ever walked
+<ce>the Nirn, but there's always someone younger, a new
+<ce>challenger.
+
+QBN:
+
+--   Quest start-up:
+
+_lvldetect_ task:
+    level 18 completed
+    say 1010
+    start quest LVLUP19
+    end quest

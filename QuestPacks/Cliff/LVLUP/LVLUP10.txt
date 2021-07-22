@@ -1,0 +1,37 @@
+Quest: LVLUP10
+DisplayName: Level 10
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>                               LVLUP 1000
+
+RefuseQuest:  [1001]
+<ce>                               LVLUP 1001
+
+AcceptQuest:  [1002]
+<ce>                               LVLUP 1002
+
+QuestFail:  [1003]
+<ce>                               LVLUP 1003
+
+QuestComplete:  [1004]
+<ce>                               LVLUP 1004
+
+Message:  1010
+<ce>            You have ascended to Level 10
+<ce>
+<ce>
+<ce>You woke today with a new sense of purpose. You're no longer
+<ce>afraid of failure. Failure is just an opportunity to learn
+<ce>something new.
+
+QBN:
+
+--   Quest start-up:
+
+_lvldetect_ task:
+    level 10 completed
+    say 1010
+    start quest LVLUP11
+    end quest

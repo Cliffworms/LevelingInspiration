@@ -1,0 +1,39 @@
+Quest: LVLUP15
+DisplayName: Level 15
+-- Message panels
+QRC:
+
+QuestorOffer:  [1000]
+<ce>                               LVLUP 1000
+
+RefuseQuest:  [1001]
+<ce>                               LVLUP 1001
+
+AcceptQuest:  [1002]
+<ce>                               LVLUP 1002
+
+QuestFail:  [1003]
+<ce>                               LVLUP 1003
+
+QuestComplete:  [1004]
+<ce>                               LVLUP 1004
+
+Message:  1010
+<ce>                        You have ascended to Level 15
+<ce>
+<ce>
+<ce>Today you suddenly realized the life you've been living,
+<ce>the punishment your body has taken -- there are limits
+<ce>to what the body can do, and perhaps you have reached
+<ce>them. You've wondered what it's like to grow old. Well,
+<ce>now you know.
+
+QBN:
+
+--   Quest start-up:
+
+_lvldetect_ task:
+    level 15 completed
+    say 1010
+    start quest LVLUP16
+    end quest
